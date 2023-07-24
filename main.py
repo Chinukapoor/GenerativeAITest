@@ -45,6 +45,7 @@ QA_CHAIN_PROMPT = PromptTemplate(input_variables=["context", "question"],templat
 
 # Run chain
 
+
 from langchain.chains import RetrievalQA
 llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
 qa_chain = RetrievalQA.from_chain_type(llm,
